@@ -681,8 +681,6 @@ Originalno, kriptosustav je koristio multiplikativnu grupu $G = (\mathbb{Z}/p\ma
 
 Uz doslovno prevođenje sustava $(\mathbb{Z}/p\mathbb{Z})^*$ na $E(\mathbb{F}_p)$ moramo uzeti u obzir i probleme koji se pojavljuju. Primjerice, moramo osmisliti algoritam koji će preslikati naše poruke u skup $\mathcal{M}$, odnosno točke na krivulji. Za to ne postoji deterministički algoritam pa se u ovom slučaju koristi probabilistički algoritam. Primjer jednog takvog algoritma temelji se na činjenici da polovinu svih elemenata čine kvadrati. Neka se otvoreni tekst sastoji od cijelih brojeva između $0$ i $M$. Za cijeli broj $m$ u $k$ koraka tražimo $x = mk + j$ gdje je $j\in\{1, 2, ..., k\}$ minimalan takav da $x^3 + ax + b$ bude kvadrat modulo $p$. Pokazuje se da je približna vrijednost da u $k$ koraka pronađemo takav $x$ dana s $1 - (\frac{1}{2})^k$ pa za npr. $k = 50$ imamo skoro gotovo siguran pogodak. Formulom $m = \lfloor \frac{x-1}{k} \rfloor$ vraćamo točku u otvoreni tekst.
 
-TODO PRIMJER
-
 \begin{nap}
     Ovim algoritmom poruka se znatno poveća što je također problematično.
 \end{nap}
